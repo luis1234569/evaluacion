@@ -13,7 +13,7 @@
             <th>Valor</th>
         </thead>
         <tbody>
-            {% for key, value in diccionario.items %}
+            {% for key, value in diccionarioEvaluate.items %}
             <tr>
                 <td>{{key}}</td>
             <td>{{value}}</td>
@@ -27,3 +27,17 @@
     
 </body>
 </html>
+
+<h1>Hello men </h1>
+<h2>diccionario</h2>
+<ul>
+    {% for key, value in diccionario.items %}
+      <li>{{key}} {{value}}</li>
+    {% endfor %}
+</ul>
+<h2>listas</h2>
+<ul>
+    {% for item in lista %}
+      <li>{{item}}</li>
+    {% endfor %}
+</ul>
